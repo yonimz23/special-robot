@@ -1,0 +1,277 @@
+header .contenedor .logo /*se agrega propiedades a la clase .logo*/
+{
+width: 100px;/*se asigna una ancho a a la imagen*/
+}
+.contenedor
+{
+    width:1140px;/*ancho al contenedor(div)*/
+    margin: 0 auto 0 auto;/*se agrega un margen superior izquierdo al contenedor*/
+    padding-right: 15px;/*la damos un margen interno derecho al contenedor*/
+    padding-left: 15px;/*la damos un margen interno izquierdo al contenedor*/
+    position: relative;/*se fija el espacio en la pagina*/
+}
+header .contenedor a
+{
+    color:black;/*se le asigna un color a los hipervimculos de la navegacion*/
+    text-decoration: none;/*se formatea el hipervinculo dejando sin formato*/
+    margin:0 20px;
+    font-style: italic;
+}
+header
+{
+padding: 15px 0;/*asignamos un margen interno superior e inferior*/
+position: fixed;/*se fija el encabezado y no quede oculto al desplazar la pagina*/
+width:100%;/*se asigna ancho de 100% que abarca todo el documento */
+background-color: lightgreen;
+z-index: 2;/*para que se quede fijo la barra de menu*/
+}
+body{
+    background-color: lightgreen;
+}
+header .contenedor
+{
+    display:flex;/*hace que los componentes del contenedor aparezcan uno al lado del otro*/
+    justify-content: space-between;/*separa con espacio lois componentes del contenedor*/
+    align-items: center;/*alinea los componentes de forma centrada*/
+}
+.boton
+{
+    text-align: center;/*centra el texto dentro del boton*/
+    text-decoration: none;/*se le quita el subrayado del hipervinculo*/
+    padding: 15px 20px;/*le damos un margen interno*/
+    border: none;/*sin borde*/
+}
+.boton.boton-rojo
+{
+    background-color: lightgreen;/*color del fondo*/
+    color: white;/*color de fuente*/
+    font-size: 18px;/*tamaño de fuente*/
+    font-weight: bold;/*negrita*/   
+    border-radius: 7.5px ;
+}
+#INICIO
+{
+    position: relative;/*top,bottom,left,right,z-indez*/
+
+}
+#INICIO img{
+    width: 100%;/*se adapta la imagen a la pantalla*/
+    display: block;/*lo convierte en un elemento de bloque*/
+}
+#INICIO .bloque-inicio
+{
+    position: absolute;/*que dependa de la posicion de su contenedor*/
+    top: 70%;/*margen superior*/
+    left:20%;/*margen izquierdo*/
+    width: 300px;/*ancho del bloque-inicio*/
+    text-align: center;/*los elementos centrados*/
+    margin-left: -150px;
+    font-style: italic;
+}
+#INICIO .bloque-inicio h1
+{
+color:black;
+font-size: 30px;
+font-style: italic;
+}
+#NOSOTROS
+{
+    background-image: url(../img/logo222.jpg);/*se agrega una imagen desde css*/
+    background-size: cover;/*la  imagen se adapta al contenido*/
+    color: black;/*color de fuente blanco*/
+    text-align: center;/*centrado*/
+    margin-bottom: 10px;
+}
+#NOSOTROS p
+{
+    position: absolute;/*que dependa de la posicion de su contenedor*/
+    left:5%;/*margen izquierdo*/
+    width: 300px;/*ancho del bloque-inicio*/
+    text-align: center;/*los elementos centrados*/
+    font-style: italic;
+}
+.seccion
+{
+    padding-top: 100px;
+    padding-bottom: 150px;
+}
+#SERVICIOS .bloque-contenido
+{
+    border: 1px solid grey;
+}
+#SERVICIOS .bloque-servicio .bloque-contenido
+{
+    padding: 15px;
+    font-style: oblique;
+    color:black;
+}
+#SERVICIOS .bloque-servicio .bloque-imagen img
+{
+    width: 100%;/*que se adapte al div*/
+}
+.column-33
+{
+    width: 31.3%;
+}
+.boton.boton-blanco
+{
+    background-color: white;
+    color: red;
+    font-size: 16px;
+    font-weight: bold;
+    border: 1px solid red; 
+}
+.row
+{
+    display: flex;/*las columnas se ajustan proporcionalmente al contenedor*/
+    flex-wrap: wrap;/*si no cabe la columna entonces el div pasa abajo*/
+}
+.column
+{
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.column-41
+{
+    width: 41.66%;
+
+}
+.column-25
+{
+    width: 22%;
+}
+#GALERIA h4
+{
+padding-right: 15px;
+padding-left: 15px;
+position: absolute;
+top:40%;
+color: white;
+font-size: 18px;
+width: 100%;
+text-align: center;
+}
+#GALERIA img
+{
+    filter: grayscale(1);/*blanco y negro */
+}
+#GALERIA .cuadro-imagen:hover img 
+{
+ filter:grayscale(0)   
+}
+#GALERIA .cuadro-imagen:hover h4
+{
+    display: none;
+}
+.contenedor-fluid
+{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: -15px;
+    position: relative;
+}
+.cuadro-imagen
+{
+    width: 100%;
+    padding-bottom: 100%;
+    position: relative;
+}
+.cuadro-imagen img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;/*solo funciona con img*/
+    object-position: center;
+    position: absolute;
+    top:0;
+    left:0;
+}
+#contactenos
+{
+    position: relative;
+}
+#contactenos iframe
+{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+#contactenos form
+{
+padding: 60px;
+background-color: lightgreen;
+position: relative;
+}
+#contactenos form .form-block
+{
+    width: 100%;
+    margin-bottom: 15px;
+}
+#contactenos form .form-block .form-control
+{
+    display: block;
+    height: 40px;
+    font-size: 16px;
+    border: 1px solid grey;
+    width: 100%;
+    padding: 5px 10px;
+}
+#contactenos form .form-block .bloque-ultimo
+{
+   margin-bottom: 0;
+}
+footer 
+{
+background-color: lightseagreen;
+color: white;
+padding-bottom: 5px;
+}
+footer .barra-footer
+{
+    background-color: rgba(128, 128, 128, 0.418);
+    text-align: center;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+footer .bloque-ultimo
+{
+    padding-left: 0;
+    list-style: none;    
+}
+footer .logo-footer
+{
+    width: 100px;
+}
+footer p
+{
+    color: white;
+    margin-bottom: 30px;
+}
+footer a
+{
+color: white;
+}
+footer ul
+{
+    padding-left: 0;
+    list-style: none;
+    margin: 0;
+}
+footer ul li
+{
+    margin-bottom: 10px;
+}
+footer .redes
+{
+    font-size: 20px;
+    display: flex;
+}
+footer .redes a
+{
+    margin: 0 7.5px;
+
+}
